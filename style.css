@@ -161,7 +161,7 @@ min-height: 4rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: hsl(0, 0%, 98%);
     padding-bottom: 2rem;
 }
 .why-intro{
@@ -356,6 +356,9 @@ footer{
         overflow:none;
     
     }
+    .nav-logo{
+        margin-left: 5vw;
+    }
     .nav-toggler{
         display: none;
     }
@@ -485,7 +488,7 @@ footer{
     .text-sec h1{
         font-family: Public Sans;
         font-weight: 300;
-        font-size: 2.8rem;
+        font-size: 3rem;
         line-height: 3rem;
         color: rgba(0, 0, 0, 0.775);
     }
@@ -494,6 +497,7 @@ footer{
         padding: 2.5rem 0 1.5rem 0 ;
         line-height: 1.8rem;
         color: rgba(0,0,0,0.5);
+        font-size: 1.2rem
     }
     .text-con button{
         margin-top: 1rem;
@@ -502,7 +506,8 @@ footer{
         border:none;
         border-radius: 25px;
         font-family: Public Sans;
-        font-weight: 700;
+        font-size: 1rem;
+        font-weight: 400;
         color: white;
         background-image: linear-gradient(to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
     }
@@ -531,6 +536,7 @@ footer{
         max-width:32rem;
         text-align: start;
         font-family: Public Sans;
+        font-size: 1.15rem;
         margin: 3rem 0 3rem 10vw;
     
     }
@@ -538,7 +544,7 @@ footer{
         font-family: Public Sans;
         font-weight: 300;
         padding-bottom:1.8rem;
-        font-size: 2.1rem;
+        font-size: 2.4rem;
     }
     .why-intro span{
         font-family: Public Sans;
@@ -556,7 +562,12 @@ footer{
         font-family: Public Sans;
         margin: 1rem 2rem 0 0;
     }
-
+    .why-component span{
+        font-size: 1.3rem;
+    }
+    .why-component span{
+        font-size: 1rem;
+    }
 
     .article-sec{
         display: flex;
@@ -596,6 +607,7 @@ footer{
         max-width: 16vw;
         padding-bottom: 2rem;
     }
+
     footer{
         background-color: hsl(233, 26%, 24%);
         display: flex;
