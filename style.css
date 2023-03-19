@@ -243,18 +243,18 @@ min-height: 4rem;
     max-width: 17rem;
     padding-bottom: 2rem;
 }
-.article-text span#article-author{
+.article-text span.article-author{
     font-family: Public Sans;
     font-weight: 300;
     color: rgba(0,0,0,0.5);
     font-size: 0.85rem;
 }
-.article-text h3#article-topic{
+.article-text h3.rticle-topic{
     font-family: Public Sans;
     font-weight: 300;
     margin: 1rem 0;
 }
-.article-text span#article-desc{
+.article-text span.article-desc{
     font-family: Public Sans;
     font-weight: 300;
     color: rgba(0,0,0,0.5);
