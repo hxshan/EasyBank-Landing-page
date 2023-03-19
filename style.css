@@ -1,0 +1,314 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Public Sans;
+}
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+min-height: 4rem;
+
+}
+.nav-logo{
+    padding-left: 1rem;
+    
+}
+
+@keyframes smoothshow {
+    from {
+        height: 0;
+      }
+      to {
+        height: 100vh;
+      }
+}
+@keyframes smoothclose {
+    from {
+      height: 100vh;
+    }
+    to {
+      height: 0;
+    }
+}
+.nav-con{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top:4rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background-image:linear-gradient(rgb(0,0,0,0.15),rgba(0,0,0,0.05));
+    z-index: 99;
+    animation: smoothshow .2s ease-in-out;
+    overflow: hidden;
+
+}
+.closed{
+    height: 0; 
+    animation: smoothclose .2s ease-in-out;
+}
+
+.nav-items{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    background-color:white;
+    border-radius: 10px;
+    margin-top :6rem;
+}
+.nav-items :first-child{
+    margin-top: 2rem;
+}
+.nav-items :last-child{
+    margin-bottom: 2rem;
+}
+.nav-items li{
+    margin: .5rem ;
+}
+.nav-items a{
+    text-decoration: none;
+    color: black;
+    font-family: Public Sans;
+}
+.nav-toggler{
+    padding-right: 1rem;
+    z-index: 100;
+}
+.nav-toggler .toggle-btn{
+    border: none;
+    background: transparent;
+    
+}
+.next-gen-sec{
+    padding-bottom: 6rem;
+}
+.image-sec{
+    background-image: url(images/bg-intro-mobile.svg);
+    background-position:0 -2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    width: 100vw;
+    height: 350px;
+
+}
+.mock-con{
+    overflow: hidden;
+    position: absolute;
+}
+.Mock-img{   
+    width: 100vw;
+    translate:0 -134px;
+}
+.image-sec img#background{
+    width: 100%;
+    height: 100%;
+}
+.text-con{
+    max-width: 20rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.text-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    font-family: Public Sans;
+    
+}
+.text-sec h1{
+    font-family: Public Sans;
+    font-weight: 300;
+    font-size: 2.3rem;
+    line-height: 3rem;
+}
+
+.text-con span#desc{
+    padding: 1rem 0 ;
+    line-height: 1.6rem;
+    color: rgba(0,0,0,0.5);
+}
+.text-con button{
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    width: fit-content;
+    border:none;
+    border-radius: 25px;
+    font-family: Public Sans;
+    font-weight: 700;
+    color: white;
+    background-image: linear-gradient(to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+}
+.why-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding-bottom: 2rem;
+}
+.why-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 21rem;
+    text-align: center;
+    font-family: Public Sans;
+    margin: 3rem 0 2rem 0;
+
+}
+.why-intro h2{
+    font-family: Public Sans;
+    font-weight: 300;
+    padding-bottom:1.8rem;
+    font-size: 2rem;
+}
+.why-intro span{
+    font-family: Public Sans;
+    font-weight: 300;
+    line-height: 1.8rem;
+    color: rgba(0,0,0,0.5);
+}
+.why-component{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 21rem;
+    text-align: center;
+    font-family: Public Sans;
+    margin: 1rem 0;
+}
+.why-component h3{
+    font-family: Public Sans;
+    font-weight: 400;
+    padding: 2rem 0 1.2rem 0; 
+}
+.why-component span{
+    font-family: Public Sans;
+    font-weight: 300;
+    line-height: 1.8rem;
+    color: rgba(0,0,0,0.5);
+    padding-bottom: 1rem;
+}
+.article-sec{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    background-color: white;
+}
+.article-sec h1#article-header{
+    font-family: Public Sans;
+    font-weight: 300;
+    padding: 4rem 0 .8rem 0;
+}
+
+.article-component{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20rem;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 2rem;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px;
+}
+
+.article-component img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding-bottom: 1rem;
+}
+.article-text{
+    max-width: 17rem;
+    padding-bottom: 2rem;
+}
+.article-text span#article-author{
+    font-family: Public Sans;
+    font-weight: 300;
+    color: rgba(0,0,0,0.5);
+    font-size: 0.85rem;
+}
+.article-text h3#article-topic{
+    font-family: Public Sans;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+.article-text span#article-desc{
+    font-family: Public Sans;
+    font-weight: 300;
+    color: rgba(0,0,0,0.5);
+}
+footer{
+    background-color: hsl(233, 26%, 24%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.foot-cont{
+    max-width: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.foot-logo{
+    margin-top: 2rem;
+}
+.socials{
+    list-style: none;
+    display: flex;
+}
+.socials li{
+    margin:1.5rem .5rem 1rem .5rem;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    font-family: Public Sans;
+    font-weight: 300;
+    padding: .5rem 0;
+    font-size: .8rem;
+
+}
+.btn-foot{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem 2rem;
+    width: fit-content;
+    border:none;
+    border-radius: 25px;
+    font-family: Public Sans;
+    font-weight: 700;
+    color: white;
+    background-image: linear-gradient(to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+}
+.copyright{
+    font-family: Public Sans;
+    font-weight: 300;
+    color: white;
+    font-size: 0.7rem;
+    margin-bottom: 1.5rem;
+}
