@@ -448,7 +448,7 @@ footer{
         flex-direction: row-reverse;
         justify-content: space-between;
         width: 100vw;
-        height: 60vh;
+        min-height: 60vh;
     }
     .image-sec{
         background-image: url(images/bg-intro-desktop.svg);
@@ -461,10 +461,12 @@ footer{
     
     }
     .mock-con{
-        overflow-y:visible;
+        overflow-y:clip;
         overflow-x: hidden;
         position: absolute;
         right:0;
+        height: 100%;
+        width: auto;
     }
     .Mock-img{   
         width: 100%;
