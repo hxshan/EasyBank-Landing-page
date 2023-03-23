@@ -447,17 +447,19 @@ footer{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        padding-bottom: 0;
         width: 100vw;
-        min-height: 60vh;
+       height: 65vh;
     }
     .image-sec{
         background-image: url(images/bg-intro-desktop.svg);
-        background-position:-60px -220px;
+        background-position:25% 50%;
         background-repeat:no-repeat;
-        background-size:150%;
+        background-size:110%;
         display: flex;
-        width: 50vw;
-        height:50vh;
+        flex-wrap: wrap;
+        width:50vw;
+        height:65vh;
     
     }
     .mock-con{
@@ -466,7 +468,7 @@ footer{
         position: absolute;
         right:0;
         height: 100%;
-        width: auto;
+        
     }
     .Mock-img{   
         width: 100%;
