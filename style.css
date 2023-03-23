@@ -221,7 +221,9 @@ min-height: 4rem;
     font-family: Public Sans;
     font-weight: 300;
     padding: 4rem 0 .8rem 0;
+    text-align: center;
 }
+
 
 .article-component{
     display: flex;
@@ -594,8 +596,8 @@ footer{
         font-family: Public Sans;
         font-weight: 300;
         padding: 4rem 0 .8rem 0;
-        align-self: start;
-        margin-left: 10vw;
+        text-align: left;
+        width: 80vw;
     }
     .article-component h3:hover{
         cursor: pointer;
